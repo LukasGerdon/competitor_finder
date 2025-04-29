@@ -1,6 +1,6 @@
 pathlib
 pandas
-faiss
+faiss-cpu
 requests
 bs4
 streamlit
