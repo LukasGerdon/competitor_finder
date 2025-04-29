@@ -7,3 +7,4 @@ streamlit
 sentence_transformers
 openai
 langdetect
+openpyxl
