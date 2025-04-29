@@ -1,0 +1,94 @@
+/* Main app styling */
+.stApp {
+    background: linear-gradient(135deg, #f6f8fc 0%, #f1f4f9 100%);
+}
+
+/* Container styling */
+.main .block-container {
+    padding: 2rem 3rem;
+    max-width: 1200px;
+}
+
+/* Header styling */
+h1 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* Input field styling */
+.stTextInput > div > div > input,
+.stTextArea > div > div > textarea {
+    background-color: #ffffff;
+    border: 1px solid #e6e9f0;
+    border-radius: 12px;
+    padding: 12px;
+    transition: all 0.3s ease;
+}
+
+.stTextInput > div > div > input:hover,
+.stTextArea > div > div > textarea:hover {
+    border-color: #4a90e2;
+    box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.1);
+}
+
+/* Selectbox styling */
+.stSelectbox > div > div > div {
+    background-color: #ffffff;
+    border: 1px solid #e6e9f0;
+    border-radius: 12px;
+    padding: 8px;
+}
+
+/* Button styling */
+.stButton > button {
+    background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 24px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.stButton > button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(74, 144, 226, 0.2);
+}
+
+/* Card styling */
+.card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 24px;
+    margin: 16px 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* Warning message styling */
+.stAlert {
+    border-radius: 12px;
+    padding: 16px;
+    background-color: #fff3cd;
+    border: 1px solid #ffeeba;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .main .block-container {
+        padding: 1rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+}

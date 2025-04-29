@@ -1,0 +1,10 @@
+json
+pathlib
+pandas
+faiss
+requests
+bs4
+streamlit
+sentence_transformers
+openai
+langdetect
