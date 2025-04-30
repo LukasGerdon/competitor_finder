@@ -189,9 +189,20 @@ def input_from_database(df: pd.DataFrame) -> tuple[str, str]:
     return ''
 
 
+def complete_url(raw_url: str) -> str:
+    raw_url = raw_url.strip()
+    if not raw_url.startswith(("http://", "https://")):
+        raw_url = "https://" + raw_url
+    scheme, rest = raw_url.split("://", 1)
+    if not rest.startswith("www."):
+        rest = "www." + rest
+    return f"{scheme}://{rest}"
+
+
 def input_via_url(llm_client: OpenAI) -> tuple[str, str]:
     url = st.text_input("Website URL", placeholder="https://example.com")
     if url:
+        url = complete_url(url)
         with st.spinner("Fetching site info…"):
             name, desc = fetch_website_info(url, llm_client)
         if desc:
